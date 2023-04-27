@@ -1,5 +1,13 @@
 html {
-    --krasa: rgb(162, 255, 159);
+    
+    --marginer: 100px;
+}
+
+html[data-theme="dark"] {
+    --krasa: blue;
+}
+html[data-theme="light"] {
+    --krasa: red;
 }
 
 h1 {
@@ -12,4 +20,23 @@ p {
 
 h2 {
     color: var(--krasa);
+}
+
+body {
+    margin: 0;
+    background-color:var(--krasaa);
+}
+
+main {
+    margin-top: var(--marginer);
+}
+
+header {
+    width: 100vw;
+    height: var(--marginer);
+    background-color:var(--krasa);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
